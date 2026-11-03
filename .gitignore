@@ -1,0 +1,97 @@
+# ===========================
+#  .gitignore para .NET / Visual Studio
+# ===========================
+
+# --- Resultados de compilación ---
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+
+# --- Visual Studio ---
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.vspscc
+*.vssscc
+
+# --- Rider / JetBrains ---
+.idea/
+*.sln.iml
+
+# --- VS Code (se conservan configuraciones compartibles) ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# --- NuGet ---
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+project.assets.json
+project.nuget.cache
+
+# --- Pruebas y cobertura ---
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+coveragereport/
+StrykerOutput/
+
+# --- Snapshots de Verify: se versionan los .verified, NO los .received ---
+*.received.*
+
+# --- Publicación ---
+publish/
+*.pubxml
+*.publishproj
+PublishScripts/
+
+# --- Secretos y configuración local ---
+# appsettings.json SÍ se versiona; los secretos van en User Secrets o variables de entorno
+appsettings.*.local.json
+*.env
+.env.*
+secrets.json
+
+# --- Bases de datos locales ---
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# --- Sistema operativo ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# --- Temporales ---
+*.tmp
+*.log
+*.bak
+*.swp
+*~
